@@ -1,0 +1,64 @@
+body{
+	font-family: Arial, Helvetica, 
+	sans-serif;
+	font-size: 16px;
+	font-weight:normal;
+	background-image: url(../Images/b.png);
+}
+.navbar{
+	background: #c2f0f0;
+}
+img{
+	width: 150px;
+	height: 350px;
+}
+#book-container{
+	padding: 50px;
+
+}
+.card{
+	height: 650px;
+}
+.panel{
+	width:500px;
+	margin: 50px;
+}
+#book-info-pic{
+	width: 200px;
+	height: 300px;
+}
+#logo-img{
+	width:50px;
+	height:50px;
+}
+
+#logo2-img{
+	width: 150px;
+	height: 100px;
+}
+
+#key-img{
+	padding-left: 10px;
+	width:50px;
+	height:40px;
+	text-align: right;
+}
+#book-info-row{
+	padding-top: 30px;
+}
+.tab-content{
+	margin: 20px;
+}
+.card-header{
+	background-color:#FAF0E6;
+}
+#feather-img{
+	width: 150px;
+	height:80px;
+}
+#prize{
+	padding-left: 50px;
+
+}
+
+

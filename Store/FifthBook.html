@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Store</title>
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="JS/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="JS/book.js"></script>
+</head>
+<body>	
+	<div class="container-fluid">
+		<nav class="navbar navbar-light justify-content-between">
+			<img src="Images/logo.png" id="logo-img" alt="">
+		<a href="index.html"><img src="Images/buzz.png" id="buzz-img" alt=""></a>
+			<a href="Admin.html"><img src="Images/key.png" id="key-img"></a>
+  		</nav>
+	</div>
+<div class="container">
+	<div class="row" id="book-info-row">	
+		<div class="col-lg-4 col-md-6 mb-4">					
+			<img src="Images/fifthbook.jpg" id="book-info-pic" alt="">	
+			<h3 id="prize">$24.99</h3>				
+		</div>
+		<div class="col-lg-8 col-md-6 mb-4">
+			<p>One Hundred Years of Solitude is a landmark 1967 novel by Colombian author Gabriel García Márquez that tells the multi-generational story of the Buendía family, whose patriarch, José Arcadio Buendía, founded the town of Macondo, a fictitious town in the country of Colombia.
+
+				The magical realist style and thematic substance of One Hundred Years of Solitude established it as an important representative novel of the literary Latin American Boom of the 1960s and 1970s, which was stylistically influenced by Modernism (European and North American) and the Cuban Vanguardia (Avant-Garde) literary movement.
+
+			Since it was first published in May 1967 in Buenos Aires by Editorial Sudamericana, One Hundred Years of Solitude has been translated into 37 languages and sold more than 50 million copies. The novel, considered García Márquez's magnum opus, remains widely acclaimed and is recognized as one of the most significant works in the Spanish literary canon.
+		</p>
+			</div>
+		</div>
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active " data-toggle="tab" href="#addCommenttab">Comment</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#commentSection">See comments</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#buySection">Buy</a>
+			</li>
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div id="addCommenttab" class="container tab-pane active">
+				<div class="panel">
+					<h3>What do you think of this book</h3>
+					<div class="panel-body">
+						<form>
+							<div class="form-group">
+								<label for="name">Name</label>
+								<input type="text" class="form-control" id="name">
+								<small id="firstandlast" class="form-text text-muted">First and last name.</small>
+							</div>
+							<div class="form-group">
+								<label for="bodyComment">Comment</label>
+								<textarea class="form-control" rows="3" id="bodyComment"></textarea>
+							</div>
+							<div class="form-group form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck">
+								<label class="form-check-label" for="exampleCheck1">Im not a robot</label>
+							</div>
+							<button type="button" id="addComment"  class="btn btn-primary">Add comment</button>						
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="commentSection" class="container tab-pane fade">
+
+			</div>
+
+			<div id="buySection" class="container tab-pine fade">
+
+				<form  id="client-info">
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputEmail4">Name</label>
+							<input class="form-control" id="inputName" placeholder="Name">
+						</div>
+					</div>  
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputEmail4">Phone number</label>
+							<input class="form-control" id="phoneNum" placeholder="Phone number">
+						</div>
+					</div>  
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputAddress">Address</label>
+							<input class="form-control" id="inputAddress" placeholder="City->Street->Number">
+						</div>
+					</div>
+					<button id="sendOrder" onclick="order()" class="btn btn-primary">Send order</button>
+				</form>
+			</div>
+		</div>
+		
+	</body>
+	<footer>
+
+	</footer>
+	</html>

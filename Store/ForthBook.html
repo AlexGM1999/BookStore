@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Store</title>
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="JS/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="JS/book.js"></script>
+</head>
+<body>	
+	<div class="container-fluid">
+		<nav class="navbar navbar-light justify-content-between">
+			<img src="Images/logo.png" id="logo-img" alt="">
+		<a href="index.html"><img src="Images/buzz.png" id="buzz-img" alt=""></a>
+			<a href="Admin.html"><img src="Images/key.png" id="key-img"></a>
+  		</nav>
+	</div>
+<div class="container">
+	<div class="row" id="book-info-row">	
+		<div class="col-lg-4 col-md-6 mb-4">					
+			<img src="Images/forthbook.jpeg" id="book-info-pic" alt="">	
+			<h3 id="prize">$14.99</h3>				
+		</div>
+		<div class="col-lg-8 col-md-6 mb-4">
+			<p>In Search of Lost Time follows the narrator's recollections of childhood and experiences into adulthood during late 19th century to early 20th century aristocratic France, while reflecting on the loss of time and lack of meaning to the world. The novel began to take shape in 1909. Proust continued to work on it until his final illness in the autumn of 1922 forced him to break off. Proust established the structure early on, but even after volumes were initially finished he kept adding new material and edited one volume after another for publication. The last three of the seven volumes contain oversights and fragmentary or unpolished passages, as they existed only in draft form at the death of the author; the publication of these parts was overseen by his brother Robert.
+
+			The work was published in France between 1913 and 1927. Proust paid for the publication of the first volume (by the Grasset publishing house) after it had been turned down by leading editors who had been offered the manuscript in longhand. Many of its ideas, motifs and scenes are foreshadowed in Proust's unfinished novel, Jean Santeuil (1896–99), though the perspective and treatment there are different, and in his unfinished hybrid of philosophical essay and story, Contre Sainte-Beuve (1908–09).</p>
+			</div>
+		</div>
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active " data-toggle="tab" href="#addCommenttab">Comment</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#commentSection">See comments</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#buySection">Buy</a>
+			</li>
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div id="addCommenttab" class="container tab-pane active">
+				<div class="panel">
+					<h3>What do you think of this book</h3>
+					<div class="panel-body">
+						<form>
+							<div class="form-group">
+								<label for="name">Name</label>
+								<input type="text" class="form-control" id="name">
+								<small id="firstandlast" class="form-text text-muted">First and last name.</small>
+							</div>
+							<div class="form-group">
+								<label for="bodyComment">Comment</label>
+								<textarea class="form-control" rows="3" id="bodyComment"></textarea>
+							</div>
+							<div class="form-group form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck">
+								<label class="form-check-label" for="exampleCheck1">Im not a robot</label>
+							</div>
+							<button type="button" id="addComment"  class="btn btn-primary">Add comment</button>						
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="commentSection" class="container tab-pane fade">
+
+			</div>
+
+			<div id="buySection" class="container tab-pine fade">
+
+				<form  id="client-info">
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputEmail4">Name</label>
+							<input class="form-control" id="inputName" placeholder="Name">
+						</div>
+					</div>  
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputEmail4">Phone number</label>
+							<input class="form-control" id="phoneNum" placeholder="Phone number">
+						</div>
+					</div>  
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputAddress">Address</label>
+							<input class="form-control" id="inputAddress" placeholder="City->Street->Number">
+						</div>
+					</div>
+					<button id="sendOrder" onclick="order()" class="btn btn-primary">Send order</button>
+				</form>
+			</div>
+		</div>
+		
+	</body>
+	<footer>
+
+	</footer>
+	</html>
